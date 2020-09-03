@@ -74,8 +74,8 @@
     var avg = (first_month + second_month + third_month) / 3.0;
     var diff = current_income - avg;
 
-    $("#res1").text(avg);
-    $("#res2").text(diff);
+    $("#res1").text(avg.toFixed(2));
+    $("#res2").text(diff.toFixed(2));
 
     diff = diff > 0 ? diff:0;
 
@@ -94,7 +94,7 @@
         break;
       }
     }
-    $("#res3").text(cost);
+    $("#res3").text(cost.toFixed(2));
 
 
   });
